@@ -1,0 +1,239 @@
+/*******
+ BASIS
+ MOBILE
+ DESKTOP
+
+*********/
+
+:root {
+    --Soft-red: #fe7867;
+    --Yellow: #fad400;
+    --Dark-desaturated-cyan: #25564b;
+    --Dark-blue: #19536b;
+    --Dark-moderate-cyan: #458c7e;
+    --Very-dark-desaturated-blue: #23303e;
+    --Very-dark-grayish-blue: #5a636c;
+    --Dark-grayish-blue: #818498;
+    --Grayish-blue: #a7abae;
+    --White: #ffffff;
+    --Light-blue: rgb(123, 205, 233);
+}
+
+/* ----------------  BASIS  ----------------*/
+
+* {
+    padding: 0px;
+    margin: 0px;
+    box-sizing: border-box;
+}
+
+body {
+    width: 100vw;
+    font-size: 18px;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 18px;
+    font-family: 'Barlow', sans-serif;
+}
+
+.header-container {
+    display: flex;
+}
+
+.menu {
+}
+
+.menu h1{
+    font-family: 'Barlow', sans-serif;
+    color: var(--White);
+}
+
+.top-of-page {
+    display: flex;
+}
+
+.main-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+header {
+    display: flex;
+}
+
+header h1{
+    font-family: 'Francien', sans-serif;
+    color: var(--White);
+}
+
+.image-header{
+    position: relative;
+    top: -20px;
+}
+
+.wrapper-1 {
+    display: flex;
+}
+
+.wrapper-2 {
+    display: flex;
+}
+
+.wrapper-3 {}
+
+.testimonials {}
+
+.testimonial-1 {}
+
+.testimonial-2 {}
+
+.testimonial-3 {}
+
+.pictures {}
+
+footer {}
+
+footer h1 {}
+
+.links {}
+
+.icons {}
+
+/* ----------------  MOBILE  ----------------*/
+@media only screen and (max-width: 1440px) {
+
+body {
+    height: auto;
+}
+
+.header-container {
+    display: flex;
+    flex-direction: column;
+    width: 475px;
+    background-image: url("images/mobile/image-header.jpg");
+    height: 600px;
+}
+
+.menu {
+    display: flex;
+    flex-direction: row;
+}
+
+.menu h1{
+
+}
+
+.icon-hamburger {
+    width: 16px;
+    height: 16px; 
+}
+
+.top-of-page {
+    display: none;
+    flex-direction: row;
+    width: 475px;
+}
+
+.main-container {
+    display: flex;
+    flex-direction: column;
+    width: 475px;
+    background-color: white;
+}
+
+header {
+    display: flex;
+
+}
+
+.wrapper-1 {
+    display: flex;
+    flex-direction: column;
+}
+
+.wrapper-2 {
+    display: flex;
+    flex-direction: column;
+}
+
+.wrapper-3 {}
+
+.testimonials {}
+
+.testimonial-1 {}
+
+.testimonial-2 {}
+
+.testimonial-3 {}
+
+.pictures {}
+
+footer {}
+
+footer h1 {}
+
+.links {}
+
+.icons {}
+}
+
+
+/* ----------------  DESKTOP  ----------------*/
+@media only screen and (min-width: 1440px) {
+
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.header-container {
+    display: flex;
+    background-image: url("images/desktop/image-header.jpg");
+}
+
+.top-of-page {}
+
+.main-container {
+    width: 1440px;
+    background-color: white;
+}
+
+header {
+    display: flex;
+
+}
+
+.wrapper-1 {
+    display: flex;
+
+}
+
+.wrapper-2 {
+    display: flex;
+}
+
+.wrapper-3 {}
+
+.testimonials {}
+
+.testimonial-1 {}
+
+.testimonial-2 {}
+
+.testimonial-3 {}
+
+.pictures {}
+
+footer {}
+
+footer h1 {}
+
+.links {}
+
+.icons {}
+
+}
