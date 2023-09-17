@@ -21,13 +21,13 @@
   <div class="main-wrapper">
   <div class="header-container">
     <div class="menu">
-    <h1>sunnyside</h1>
+    <img src="images/logo.svg"/>
     <img class="icon-hamburger" src="images/icon-hamburger.svg" />
     <div class="top-of-page">
-      <div class="about">About</div>
-      <div class="services">Services</div>
-      <div class="projects">Projects</div>
-      <div class="contact">Contact</div>
+      <a href="#about" class="about">About</a>
+      <a href="#services" class="services">Services</a>
+      <a href="#projects" class="projects">Projects</a>
+      <a href="#contact" class="contact">Contact</a>
     </div>
   </div>
   <h1>WE ARE CREATIVES</h1>
@@ -35,34 +35,44 @@
 </div>
 
 <div class="main-container">    
-  <div class="wrapper-1">
+  <div id="about" class="wrapper-1">
+    <div class="item-1">
     <picture class="image-transform">
-      <source media="(min-width:1440px)" srcset="images/desktop/image-transform.jpg">
-      <img src="images/mobile/image-transform.jpg" class="image-transform-mobile" style="width:475px;">
+      <source media="(min-width:964px)" srcset="images/desktop/image-transform.jpg">
+      <img src="images/mobile/image-transform.jpg" class="image-transform-mobile" style="width:475px">
     </picture>
+  </div>
+  <div class="item-2">
     <div class="transform">  
-    <h1>Transform your <br> brand</h1>
+    <h1>Transform your brand</h1>
         <p>We are a full-service creative agency specializing in helping brands grow fast.
           Engage your clients through compelling visuals that do most of the marketing for you.
-        <p>
-        <h2>LEARN MORE</h2>
-    </div>
+        </p>
+        <a class="learn-more">LEARN MORE</a>
+          <hr>
+        </div>
+      </div>
   </div>
     
-    <div class="wrapper-2">
+    <div id="services" class="wrapper-2">
+          <div class="item-1">
       <picture class="image-stand-out">
-        <source media="(min-width:1440px)" srcset="images/desktop/image-stand-out.jpg">
-        <img src="images/mobile/image-stand-out.jpg" class="image-stand-out-mobile" style="width:475px;">
+        <source media="(min-width:964px)" srcset="images/desktop/image-stand-out.jpg">
+        <img src="images/mobile/image-stand-out.jpg" class="image-stand-out-mobile" style="width:475px">
       </picture>
+      </div>
+      <div class="item-2">
       <div class="stand-out">
         <h1>Stand out to the right audience</h1>
         <p>Using a collaborative formula of designers, researchers, photographers, videographers, and copywriters, we’ll
           build and extend your brand in digital places.</p>
-          <h2>LEARN MORE</h2>
+          <a class="learn-more">LEARN MORE</a>
+          <hr>
         </div>
       </div>
+      </div>
 
-    <div class="wrapper-3">      
+    <div id="projects" class="wrapper-3">      
       <div class="image-graphic-design">    
       <h1>Graphic design</h1>
       <p>Great design makes you memorable. We deliver artwork that underscores your brand message and captures potential
@@ -102,36 +112,36 @@
 
     <div class="pictures">
       <picture class="image-gallery-milkbottles picture-1">
-        <source media="(min-width:1440px)" srcset="images/desktop/image-gallery-milkbottles.jpg">
+        <source media="(min-width:964px)" srcset="images/desktop/image-gallery-milkbottles.jpg">
         <img src="images/mobile/image-gallery-milkbottles.jpg" class="image-gallery-milkbottles-mobile"
-          style="width:237px;">
+          style="width:100%">
       </picture>
       <picture class="image-gallery-orange picture-2">
-        <source media="(min-width:1440px)" srcset="images/desktop/image-gallery-orange.jpg">
-        <img src="images/mobile/image-gallery-orange.jpg" class="image-gallery-orange-mobile" style="width:237px;">
+        <source media="(min-width:964px)" srcset="images/desktop/image-gallery-orange.jpg">
+        <img src="images/mobile/image-gallery-orange.jpg" class="image-gallery-orange-mobile" style="width:100%">
       </picture>
       <picture class="image-gallery-cone picture-3">
-        <source media="(min-width:1440px)" srcset="images/desktop/image-gallery-cone.jpg">
-        <img src="images/mobile/image-gallery-cone.jpg" class="image-gallery-cone-mobile" style="width:237px;;">
+        <source media="(min-width:964px)" srcset="images/desktop/image-gallery-cone.jpg">
+        <img src="images/mobile/image-gallery-cone.jpg" class="image-gallery-cone-mobile" style="width:100%">
       </picture>
       <picture class="image-gallery-sugar-cubes picture-4">
-        <source media="(min-width:1440px)" srcset="images/desktop/image-gallery-sugarcubes.jpg">
-        <img src="images/mobile/image-gallery-sugar-cubes.jpg" class="image-galery-sugar-cubes-mobile" style="width:237px;;">
+        <source media="(min-width:964px)" srcset="images/desktop/image-gallery-sugarcubes.jpg">
+        <img src="images/mobile/image-gallery-sugar-cubes.jpg" class="image-galery-sugar-cubes-mobile" style="width:100%">
       </picture>
     </div>
 
-    <footer>
+    <footer id="contact">
       <h1>sunnyside</h1>
       <div class="links">
-        <h3>About</h3>
-        <h3>Services</h3>
-        <h3>Projects</h3>
+        <a href="#about">About</a>
+        <a href="#services">Services</a>
+        <a href="#projects">Projects</a>
       </div>
       <div class="icons">
-        <img class="facebook-icon" src="images/icon-facebook.svg" />
-        <img class="instagram-icon" src="images/icon-instagram.svg" />
-        <img class="twitter-icon" src="images/icon-twitter.svg" />
-        <img class="pinterest-icon" src="images/icon-pinterest.svg" />
+        <a class="facebook-icon icon"><img src="images/icon-facebook.svg" /></a>
+        <a class="instagram-icon icon"><img src="images/icon-instagram.svg" /></a>
+        <a class="twitter-icon icon"><img src="images/icon-twitter.svg" /></a>
+        <a class="pinterest-icon icon"><img src="images/icon-pinterest.svg" /></a>
       </div>
     </footer>
     </div>
