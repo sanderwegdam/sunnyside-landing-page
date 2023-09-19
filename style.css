@@ -44,7 +44,7 @@ body {
     margin-top: 15px;
 }
 
-.top-of-page a {
+.menu a {
     color: var(--black);
     text-decoration: none;
 }
@@ -64,6 +64,12 @@ body {
     display: flex;
     justify-content: center;
     align-items: center;
+}
+
+.logo{
+    width: 124px;
+    margin-left: 30px;
+    margin-top: 30px;
 }
 
 .image-graphic-design h1, .image-photography h1 {
@@ -251,40 +257,51 @@ footer h1 {
 
     .header-container {
         display: flex;
-        flex-direction: column;
-        align-items: center;
+        position: relative;
+        flex-direction: column;     
         width: 475px;
         background-image: url("images/mobile/image-header.jpg");
         /* background-size: cover; */
         height: 700px;
-        background-size: 475px 700px;
-    }
+        background-size: 475px 700px;   
+        align-items: center;   
+    }  
 
-    .menu {
-        display: grid;
-        grid-template-columns: 1fr 1fr;
-        padding: 20px;
+    .logo{   
+        align-self: flex-start;
     }
 
     .icon-hamburger {
-        margin-top: 15px;
-        margin-left: 10px;
-        /* margin-right: -10px; */
-        width: 18px;
-        height: 18px;
-        /* justify-content: flex-end;
-        align-items: flex-end; */
-        justify-self: flex-end;
+        margin-top: -20px;
+        margin-left: 420px;
+        width: 24px;
+        height: 18px;   
+    }
+    
+    .icon-hamburger:hover~.menu {
+        display: flex; 
+        position: absolute;  
+        flex-direction: column;
+        width: 400px;
+        height: 430px;
+        top: 100px;
+        background-color: white;
+        justify-content: center;
+        align-items: center; 
+        clip-path: polygon(87% 13%, 100% 0%, 100% 100%, 75% 100%, 0 100%, 0 13%);
     }
 
-    .top-of-page {
-        display: none;
-        flex-direction: row;
-        width: 475px;
+    .menu {
+        display:none;
     }
 
-    .menu+h1 {
-        padding: 95px;
+    .menu-item {
+        padding: 20px;
+    }
+
+    .menu+h1 {      
+        margin-top: 220px;
+        padding: 0px 95px;
     }
 
     .icon-arrow-down {
@@ -424,30 +441,29 @@ footer h1 {
         background-position: center;
     }
 
-    .menu {
-        display: grid;
-        grid-template-columns: 1fr 1fr;
-        padding: 20px;
+    .logo{   
+        align-self: flex-start;
     }
 
     .icon-hamburger {
         display: none;
     }
 
-    .top-of-page {
+    .menu {
         display: flex;
         flex-direction: row;
         font-size: 15px;
         color: white;
         font-weight: 50;
-        margin-top: 15px;
+        margin-top: -20px;
+        align-self: flex-end;
+        margin-right: 20px;
         justify-content: space-around;
         width: 400px;
         height: 15px;
-
     }
 
-    .top-of-page *:hover {
+    .menu *:hover {
         border-radius: 20px;
         background-color: rgba(255, 255, 255, 30%);
         padding-bottom: 30px;
@@ -458,14 +474,18 @@ footer h1 {
         font-family: 'Fraunces';
     }
 
-    .top-of-page *:active {
+    .menu *:active {
         background-color: rgb(255, 255, 255);
         color: black;
     }
 
-    .menu+h1 {
-        padding: 70px;
+    .menu+h1{
+        padding: 90px;
     }
+
+    /* .menu+h1 {
+        padding: 70px;
+    } */
 
     .icon-arrow-down {
         width: 40px;
