@@ -265,7 +265,11 @@ footer h1 {
         align-self: flex-end;   
     }
     
-    .icon-hamburger:hover~.menu {
+    .menu {
+        display:none;
+    }
+
+    .menu-open {
         display: flex; 
         position: absolute;  
         flex-direction: column;
@@ -278,9 +282,6 @@ footer h1 {
         clip-path: polygon(87% 13%, 100% 0%, 100% 100%, 75% 100%, 0 100%, 0 13%);
     }
 
-    .menu {
-        display:none;
-    }
 
     .menu-item {
         padding: 20px;
@@ -327,11 +328,7 @@ footer h1 {
         display: none;
     }
 
-    .transform a:hover~hr {
-        margin-inline: auto;
-    }
-
-    .stand-out a:hover~hr {
+    .transform a:hover~hr, .stand-out a:hover~hr {
         margin-inline: auto;
     }
 
@@ -520,38 +517,47 @@ footer h1 {
     }
 
     .wrapper-1 .item-2, .wrapper-2 .item-2{        
-        padding-block: 20px;
+        padding: 20px 20px;
         display: flex;
         justify-content: center;
-        align-items: center;
+        align-items: center;        
     }
 
     .item-1, .item-2 {
         width: 50%;
         margin-bottom: -4px;
-    }
-
+    }  
+  
+    
     .image-transform-mobile, .image-stand-out-mobile{
         width: 475px;
     }
-
+    
     .wrapper-1 .item-1 {
         order: 1;
     }
-
+    
     .wrapper-1 h1, .wrapper-2 h1 {
         font-size: 34px;
-        padding-inline: 60px;
+        padding-inline: 40px;
     }
-
+    
     .wrapper-1 p, .wrapper-2 p {
         font-size: 14px;
-        padding: 20px 60px;
+        padding: 20px 40px;
     }
-
+   
+    .wrapper-1 a, .wrapper-2 a {
+        padding-inline: 40px;
+    }
+    
     .wrapper-1, .wrapper-2, .wrapper-3 {
         display: flex;
         flex-direction: row;
+    }  
+    
+    .transform a:hover~hr, .stand-out a:hover~hr {
+        margin-inline: 40px;
     }
 
     .image-graphic-design {
@@ -638,7 +644,6 @@ footer h1 {
 }
 
 @media only screen and (min-width: 1440px) {
-
     .main-wrapper {
         width: 1440px;
     }
@@ -714,13 +719,21 @@ footer h1 {
     }
 
     .wrapper-1 h1, .wrapper-2 h1 {
-        font-size: 34px;
-        padding-inline: 60px;
+        font-size: 40px;
+        padding-inline: 140px;
     }
 
     .wrapper-1 p, .wrapper-2 p {
-        font-size: 14px;
-        padding: 20px 180px;
+        font-size: 16px;
+        padding: 20px 140px;
+    }
+
+    .wrapper-1 a, .wrapper-2 a {
+        padding-inline: 140px;
+    }
+
+    .transform a:hover~hr, .stand-out a:hover~hr {
+        margin-inline: 140px;
     }
 
     .wrapper-1, .wrapper-2, .wrapper-3 {
@@ -771,7 +784,7 @@ footer h1 {
         flex-wrap: wrap;
     }
 
-    picture {
+    .pictures > * {        
         width: 25%;
         height: 447px;    
     }
