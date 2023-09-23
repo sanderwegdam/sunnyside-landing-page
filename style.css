@@ -52,10 +52,6 @@ body {
     margin-top: 30px;
 }
 
-.menu img {
-    margin-top: 15px;
-}
-
 .menu a {
     color: var(--black);
     text-decoration: none;
@@ -197,10 +193,6 @@ footer {
     justify-content: center;
 }
 
-.footer-logo{
-    color: var(--Dark-desaturated-cyan);
-}
-
 .links {
     color: var(--Dark-moderate-cyan);
     flex-direction: row;
@@ -208,7 +200,7 @@ footer {
     justify-content: space-around;
     width: 330px;
     padding-top: 40px;
-    padding-bottom: 50px;
+    padding-bottom: 60px;
 }
 
 .icons {
@@ -224,10 +216,13 @@ footer {
     text-decoration: none;
 }
 
-.contact a:hover {
+ .links a:hover {
     color: var(--White);
 }
 
+path:hover {
+    fill: white;
+}
 
 /* ----------------  MOBILE  ----------------*/
 @media only screen and (max-width: 964px) {
@@ -414,7 +409,6 @@ footer {
     footer  {
         width: 375px;
     }
-
 }
 
 
@@ -465,27 +459,30 @@ footer {
         margin-right: 20px;
         justify-content: space-around;
         width: 400px;
-        height: 15px;
+        height: 20px;
     }
-
-    .menu *:hover {
+    
+     .menu-item:hover {
         border-radius: 20px;
         background-color: rgba(255, 255, 255, 30%);
-        padding-bottom: 30px;
-        padding-top: 10px;
-        padding-inline: 15px;
-        margin-top: -10px;
-        margin-left: -15px;
+        padding-bottom: 25px;
+        padding-top: 10px;        
+        padding-inline: 10px;
+        margin-top: -5px;
+        margin-left: -10px;
         font-family: 'Fraunces', serif;
+        text-transform: uppercase;
+        font-size: 12px;
+        display: flex;
     }
 
-    .menu *:active {
+   .menu-item:active {
         background-color: rgb(255, 255, 255);
         color: black;
     }
 
     .menu+h1{
-        padding: 120px;
+        padding:110px;
     }
 
     /* .menu+h1 {
@@ -629,33 +626,7 @@ footer {
         height: 800px;
         background-size: 1440px 800px;
         background-position: center;
-    } 
-
-    .menu *:hover {
-        border-radius: 20px;
-        background-color: rgba(255, 255, 255, 30%);
-        padding-bottom: 30px;
-        padding-top: 10px;
-        padding-inline: 15px;
-        margin-top: -10px;
-        margin-left: -15px;
-        font-family: 'Fraunces', serif;
-    }
-
-    .menu *:active {
-        background-color: rgb(255, 255, 255);
-        color: black;
-    }
-
-    .menu+h1{
-        padding: 120px;
-    }
-
-    .icon-arrow-down {
-        width: 40px;
-        display: flex;
-        margin: 0 auto;
-    }
+    }   
 
     .main-container { 
         width: 1440px;
