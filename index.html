@@ -1,145 +1,214 @@
 <!DOCTYPE html>
 <html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- displays site properly based on user's device -->
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./images/favicon-32x32.png"
+    />
+    <title>Frontend Mentor | Sunnyside agency landing page</title>
 
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <!-- displays site properly based on user's device -->
-  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">  
-  <title>Frontend Mentor | Sunnyside agency landing page</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Barlow:wght@600&family=Fraunces:opsz,wght@9..144,700;9..144,900&display=swap"
+      rel="stylesheet"
+    />
 
-<link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link
-  href="https://fonts.googleapis.com/css2?family=Barlow:wght@600&family=Fraunces:opsz,wght@9..144,700;9..144,900&display=swap"
-  rel="stylesheet">
+    <link rel="stylesheet" href="style.css" />
+  </head>
 
-  <link rel="stylesheet" href="style.css">
-</head>
-
-<body>
-  <div class="main-wrapper">
-    <div class="header-container"> 
-      <img class="logo" src="images/logo.svg"/>
-      <img class="icon-hamburger" src="images/icon-hamburger.svg" /> 
-      <div class="menu">
-        <a href="#about" class="about menu-item">About</a>
-        <a href="#services" class="services menu-item">Services</a>
-        <a href="#projects" class="projects menu-item">Projects</a>
-        <a href="#contact" class="contact menu-item">Contact</a>
-      </div>  
-      <h1>WE ARE CREATIVES</h1>
-      <img class="icon-arrow-down" src="images/icon-arrow-down.svg" />
-    </div>
-
-    <div class="main-container">    
-      <div id="about" class="wrapper-1">
-        <div class="item-1">
-          <picture class="image-transform">
-            <source media="(min-width:963px)" srcset="images/desktop/image-transform.jpg">
-            <img src="images/mobile/image-transform.jpg" class="image-transform-mobile">
-          </picture>
+  <body>
+    <div class="main-wrapper">
+      <div class="header-container">
+        <img class="logo" src="images/logo.svg"/>
+        <img class="icon-hamburger" src="images/icon-hamburger.svg" />
+        <div class="menu">
+          <a href="#about" class="about menu-item">About</a>
+          <a href="#services" class="services menu-item">Services</a>
+          <a href="#projects" class="projects menu-item">Projects</a>
+          <a href="#contact" class="contact menu-item">Contact</a>
         </div>
-        <div class="item-2">
-          <div class="transform">  
-            <h1>Transform your brand</h1>
-            <p>We are a full-service creative agency specializing in helping brands grow fast.
-                Engage your clients through compelling visuals that do most of the marketing for you.
+        <h1>WE ARE CREATIVES</h1>
+        <img class="icon-arrow-down" src="images/icon-arrow-down.svg" />
+      </div>
+
+      <div class="main-container">
+        <div id="about" class="wrapper-1">
+          <div class="item-1">
+            <picture class="image-transform">
+              <source
+                media="(min-width:963px)"
+                srcset="images/desktop/image-transform.jpg"
+              />
+              <img
+                src="images/mobile/image-transform.jpg"
+                class="image-transform-mobile"
+              />
+            </picture>
+          </div>
+          <div class="item-2">
+            <div class="transform">
+              <h1>Transform your brand</h1>
+              <p>
+                We are a full-service creative agency specializing in helping
+                brands grow fast. Engage your clients through compelling visuals
+                that do most of the marketing for you.
+              </p>
+              <a class="learn-more">LEARN MORE</a>
+              <hr />
+            </div>
+          </div>
+        </div>
+        <div id="services" class="wrapper-2">
+          <div class="item-1">
+            <picture class="image-stand-out">
+              <source
+                media="(min-width:964px)"
+                srcset="images/desktop/image-stand-out.jpg"
+              />
+              <img
+                src="images/mobile/image-stand-out.jpg"
+                class="image-stand-out-mobile"
+              />
+            </picture>
+          </div>
+          <div class="item-2">
+            <div class="stand-out">
+              <h1>Stand out to the right audience</h1>
+              <p>
+                Using a collaborative formula of designers, researchers,
+                photographers, videographers, and copywriters, we’ll build and
+                extend your brand in digital places.
+              </p>
+              <a class="learn-more">LEARN MORE</a>
+              <hr />
+            </div>
+          </div>
+        </div>
+        <div id="projects" class="wrapper-3">
+          <div class="image-graphic-design">
+            <h1>Graphic design</h1>
+            <p>
+              Great design makes you memorable. We deliver artwork that
+              underscores your brand message and captures potential clients’
+              attention.
             </p>
-            <a class="learn-more">LEARN MORE</a>
-            <hr>
+          </div>
+          <div class="image-photography">
+            <h1>Photography</h1>
+            <p>
+              Increase your credibility by getting the most stunning,
+              high-quality photos that improve your business image.
+            </p>
           </div>
         </div>
-      </div>
-      <div id="services" class="wrapper-2">
-        <div class="item-1">
-          <picture class="image-stand-out">
-            <source media="(min-width:964px)" srcset="images/desktop/image-stand-out.jpg">
-            <img src="images/mobile/image-stand-out.jpg" class="image-stand-out-mobile">
+        <div class="testimonials">
+          <h1>CLIENT TESTIMONIALS</h1>
+          <div class="testimonials-items">
+            <div class="testimonial-1">
+              <img src="images/image-emily.jpg" />
+              <p>
+                We put our trust in Sunnyside and they delivered, making sure
+                our needs were met and deadlines were always hit.
+              </p>
+              <h3>Emily R.</h3>
+              <h4>Marketing Director</h4>
+            </div>
+            <div class="testimonial-2">
+              <img src="images/image-thomas.jpg" />
+              <p>
+                Sunnyside’s enthusiasm coupled with their keen interest in our
+                brand’s success made it a satisfying and enjoyable experience.
+              </p>
+              <h3>Thomas S.</h3>
+              <h4>Chief Operating Officer</h4>
+            </div>
+            <div class="testimonial-3">
+              <img src="images/image-jennie.jpg" />
+              <p>
+                Incredible end result! Our sales increased over 400% when we
+                worked with Sunnyside. Highly recommended!
+              </p>
+              <h3>Jennie F.</h3>
+              <h4>Business Owner</h4>
+            </div>
+          </div>
+        </div>
+        <div class="pictures">
+          <picture class="image-gallery-milkbottles">
+            <source
+              media="(min-width:964px)"
+              srcset="images/desktop/image-gallery-milkbottles.jpg"
+            />
+            <img
+              src="images/mobile/image-gallery-milkbottles.jpg"
+              class="image-gallery-milkbottles-mobile"
+              style="width: 100%"
+            />
+          </picture>
+          <picture class="image-gallery-orange">
+            <source
+              media="(min-width:964px)"
+              srcset="images/desktop/image-gallery-orange.jpg"
+            />
+            <img
+              src="images/mobile/image-gallery-orange.jpg"
+              class="image-gallery-orange-mobile"
+              style="width: 100%"
+            />
+          </picture>
+          <picture class="image-gallery-cone">
+            <source
+              media="(min-width:964px)"
+              srcset="images/desktop/image-gallery-cone.jpg"
+            />
+            <img
+              src="images/mobile/image-gallery-cone.jpg"
+              class="image-gallery-cone-mobile"
+              style="width: 100%"
+            />
+          </picture>
+          <picture class="image-gallery-sugar-cubes">
+            <source
+              media="(min-width:964px)"
+              srcset="images/desktop/image-gallery-sugarcubes.jpg"
+            />
+            <img
+              src="images/mobile/image-gallery-sugar-cubes.jpg"
+              class="image-galery-sugar-cubes-mobile"
+              style="width: 100%"
+            />
           </picture>
         </div>
-        <div class="item-2">
-          <div class="stand-out">
-            <h1>Stand out to the right audience</h1>
-            <p>Using a collaborative formula of designers, researchers, photographers, videographers, and copywriters, we’ll
-              build and extend your brand in digital places.</p>
-            <a class="learn-more">LEARN MORE</a>
-            <hr>
+        <footer id="contact" class="contact">
+          <img class="footer-logo" src="images/logo.svg"/>
+          <div class="links">
+            <a href="#about">About</a>
+            <a href="#services">Services</a>
+            <a href="#projects">Projects</a>
           </div>
-        </div>
+          <div class="icons"> 
+            <a class="facebook-icon icon"><img class="facebook-icon" src="images/icon-facebook.png"
+            />               
+          </a>
+          <a class="instagram-icon icon"
+          ><img src="images/icon-instagram.png"
+          /></a>
+          <a class="twitter-icon icon"
+          ><img src="images/icon-twitter.png" />
+        </a>
+        <a class="pinterest-icon icon"
+        ><img src="images/icon-pinterest.png"
+        /></a>
       </div>
-      <div id="projects" class="wrapper-3">      
-        <div class="image-graphic-design">    
-          <h1>Graphic design</h1>
-          <p>Great design makes you memorable. We deliver artwork that underscores your brand message and captures potential
-            clients’ attention.</p>
-        </div>
-        <div class="image-photography">
-          <h1>Photography</h1>
-          <p>Increase your credibility by getting the most stunning, high-quality photos that improve your business image.
-          </p>
-        </div>
-      </div>
-      <div class="testimonials">
-        <h1>CLIENT TESTIMONIALS</h1>
-        <div class="testimonials-items">
-          <div class="testimonial-1">
-            <img src="images/image-emily.jpg" />
-            <p>We put our trust in Sunnyside and they delivered, making sure our needs were met and deadlines were always
-              hit.</p>
-            <h3>Emily R.</h3>
-            <h4>Marketing Director</h4>
-          </div>
-          <div class="testimonial-2">
-            <img src="images/image-thomas.jpg" />
-            <p>Sunnyside’s enthusiasm coupled with their keen interest in our brand’s success made it a satisfying and
-              enjoyable experience.</p>
-            <h3>Thomas S.</h3>
-            <h4>Chief Operating Officer</h4>
-          </div>
-          <div class="testimonial-3">
-            <img src="images/image-jennie.jpg" />
-            <p>Incredible end result! Our sales increased over 400% when we worked with Sunnyside. Highly recommended!</p>
-            <h3>Jennie F.</h3>
-            <h4>Business Owner</h4>
-          </div>
-        </div>
-      </div>
-      <div class="pictures">
-        <picture class="image-gallery-milkbottles">
-          <source media="(min-width:964px)" srcset="images/desktop/image-gallery-milkbottles.jpg">
-          <img src="images/mobile/image-gallery-milkbottles.jpg" class="image-gallery-milkbottles-mobile"
-            style="width:100%;">
-        </picture>
-        <picture class="image-gallery-orange">
-          <source media="(min-width:964px)" srcset="images/desktop/image-gallery-orange.jpg">
-          <img src="images/mobile/image-gallery-orange.jpg" class="image-gallery-orange-mobile" style="width:100%">
-        </picture>
-        <picture class="image-gallery-cone">
-          <source media="(min-width:964px)" srcset="images/desktop/image-gallery-cone.jpg">
-          <img src="images/mobile/image-gallery-cone.jpg" class="image-gallery-cone-mobile" style="width:100%">
-        </picture>
-        <picture class="image-gallery-sugar-cubes">
-          <source media="(min-width:964px)" srcset="images/desktop/image-gallery-sugarcubes.jpg">
-          <img src="images/mobile/image-gallery-sugar-cubes.jpg" class="image-galery-sugar-cubes-mobile" style="width:100%">
-        </picture>
-      </div>
-      <footer id="contact">
-        <h1>sunnyside</h1>
-        <div class="links">
-          <a href="#about">About</a>
-          <a href="#services">Services</a>
-          <a href="#projects">Projects</a>
-        </div>
-        <div class="icons">
-          <a class="facebook-icon icon"><img src="images/icon-facebook.svg" /></a>
-          <a class="instagram-icon icon"><img src="images/icon-instagram.svg" /></a>
-          <a class="twitter-icon icon"><img src="images/icon-twitter.svg" /></a>
-          <a class="pinterest-icon icon"><img src="images/icon-pinterest.svg" /></a>
-        </div>
-      </footer>
-    </div>
+    </footer>
   </div>
-  <script src="js/click.js"></script>
-</body>
+</div>
+<script src="js/click.js"></script>
+  </body>
 </html>
