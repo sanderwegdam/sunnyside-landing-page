@@ -74,6 +74,10 @@ body {
     align-items: center;
 }
 
+p {
+    line-height: 25px;
+}
+
 .wrapper-1, .wrapper-2, .wrapper-3 {
     display: flex;
     justify-content: center;
@@ -243,7 +247,6 @@ path:hover {
         flex-direction: column;     
         width: 375px;
         background-image: url("images/mobile/image-header.jpg");
-        /* background-size: cover; */
         height: 538px;
         background-size: 375px 538px;   
         align-items: center;   
@@ -270,7 +273,7 @@ path:hover {
         position: absolute;  
         flex-direction: column;
         width: 320px;
-        height: 330px;
+        height: 320px;
         top: 80px;
         background-color: white;
         justify-content: center;
@@ -278,7 +281,19 @@ path:hover {
         clip-path: polygon(91% 9%, 100% 0%, 100% 100%, 75% 100%, 0 100%, 0 9%);
     }
 
-    .menu-item {
+    .menu-item:first-child{  
+        margin-top: 25px; 
+    }
+
+    .menu-item:first-child:hover{  
+        padding-inline: 35px; 
+    }
+
+    .menu-item:last-child:hover{
+        padding-inline: 30px; 
+    }
+
+    .menu-item {    
         padding-block: 18px;
     }
 
@@ -402,9 +417,9 @@ path:hover {
     }
 
     .pictures > * {
-        width: 187px;
-        height: 187px;        
-    }
+        width: 50%;
+        height: 187px;   
+     }
 
     footer  {
         width: 375px;
@@ -559,7 +574,7 @@ path:hover {
 
     .image-graphic-design p, .image-photography p {
         font-size: 14px;
-        padding: 0 80px;
+        padding: 0 85px;
     }
 
     .testimonials-items {
@@ -583,11 +598,23 @@ path:hover {
         font-size: 16px;
     }
 
-    .testimonial-1 p, .testimonial-2 p, .testimonial-3 p {
+    .testimonial-1 p  {
+        padding: 40px 25px;
+        text-align: center;
+        font-size: 13px;   
+    }
+
+    .testimonial-2 p{
+        padding: 40px 55px;
+        text-align: center;
+        font-size: 13px;      
+    }
+
+     .testimonial-3 p {
         padding: 40px 10px;
         text-align: center;
-        font-size: 14px;
-    }
+        font-size: 13px;   
+    }    
 
     .testimonial-1 h4, .testimonial-2 h4, .testimonial-3 h4 {
         padding-bottom: 60px;
@@ -683,14 +710,26 @@ path:hover {
 
     .image-graphic-design p, .image-photography p {
         font-size: 14px;
-        padding: 0 200px;
+        padding: 0 210px;
     }
 
-    .testimonial-1 p, .testimonial-2 p, .testimonial-3 p {
-        padding: 40px 30px;
+    .testimonial-1 p  {
+        padding: 40px 25px;
         text-align: center;
-        font-size: 22px;
+        font-size: 22px;   
     }
+
+    .testimonial-2 p{
+        padding: 40px 55px;
+        text-align: center;
+        font-size: 22px;      
+    }
+
+     .testimonial-3 p {
+        padding: 40px 0px;
+        text-align: center;
+        font-size: 22px;   
+    } 
 
     .pictures {
         display: flex;

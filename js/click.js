@@ -19,7 +19,7 @@ document.addEventListener('DOMContentLoaded', function () {
   // Event listeners toevoegen aan de links binnen het menu
   menuLinks.forEach(function (link) {
     link.addEventListener('click', function (e) {
-      e.preventDefault(); // Voorkom standaardgedrag van de link
+      // e.preventDefault(); // Voorkom standaardgedrag van de link
       menu.classList.remove('menu-open');
       menu.classList.add('menu');
     });
