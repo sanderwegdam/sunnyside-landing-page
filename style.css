@@ -297,7 +297,7 @@ path:hover {
         padding-block: 18px;
     }
 
-    .menu-item:hover{
+    .menu-item:hover, .menu-item:active, .menu-item:focus{
         background-color: var(--Yellow);
         border-radius: 30px;
         padding: 15px 25px;
@@ -477,7 +477,7 @@ path:hover {
         height: 20px;
     }
     
-     .menu-item:hover {
+     .menu-item:hover, .menu-item:focus {
         border-radius: 20px;
         background-color: rgba(255, 255, 255, 30%);
         padding-bottom: 25px;
