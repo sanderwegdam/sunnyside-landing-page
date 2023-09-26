@@ -275,6 +275,8 @@ path:hover {
         width: 320px;
         height: 320px;
         top: 80px;
+        font-size: 20px;
+        color: var(--Very-dark-grayish-blue);
         background-color: white;
         justify-content: center;
         align-items: center; 
@@ -294,16 +296,15 @@ path:hover {
     }
 
     .menu-item {    
-        padding-block: 18px;
+        padding: 18px 25px;
     }
 
     .menu-item:hover, .menu-item:active, .menu-item:focus{
         background-color: var(--Yellow);
         border-radius: 30px;
-        padding: 15px 25px;
-        margin-top: 15px;
         text-transform: uppercase;
-        font-size: 14px;
+        font-size: 16px;
+        color: black;
         font-family: 'Fraunces', sans-serif;
     }
 
@@ -466,29 +467,29 @@ path:hover {
     .menu {
         display: flex;
         flex-direction: row;
-        font-size: 15px;
+        font-size: 18px;
         color: white;
         font-weight: 50;
-        margin-top: -20px;
+        margin-top: -30px;
         align-self: flex-end;
-        margin-right: 20px;
+        margin-right: 25px;
         justify-content: space-around;
-        width: 400px;
+        width: 420px;
         height: 20px;
+    }
+
+    .menu-item {
+        padding-top: 15px;
+        padding-inline: 20px; 
+        padding-bottom: 35px;
     }
     
      .menu-item:hover, .menu-item:focus {
-        border-radius: 20px;
-        background-color: rgba(255, 255, 255, 30%);
-        padding-bottom: 25px;
-        padding-top: 10px;        
-        padding-inline: 10px;
-        margin-top: -5px;
-        margin-left: -10px;
+        border-radius: 30px;
+        background-color: rgba(255, 255, 255, 30%);                  
         font-family: 'Fraunces', serif;
         text-transform: uppercase;
-        font-size: 12px;
-        display: flex;
+        font-size: 16px;
     }
 
    .menu-item:active {
@@ -497,7 +498,8 @@ path:hover {
     }
 
     .menu+h1{
-        padding:110px;
+        margin-top:130px;
+        padding-bottom:110px;
     }
 
     /* .menu+h1 {
