@@ -29,6 +29,10 @@
     box-sizing: border-box;
 }
 
+html, body{
+    scroll-behavior: smooth;
+}
+
 body {
     width: 100vw;
     font-size: 18px;
@@ -37,13 +41,17 @@ body {
     justify-content: center;
     align-items: center;
     font-size: 18px;
-    font-family: 'Barlow', sans-serif;
+    font-family: 'Barlow', sans-serif;    
 }
 
 .main-wrapper{
     display: flex;
     justify-content: center;
-    align-items: center;
+    align-items: center;  
+}
+
+#services, #about, #projects, #contact{
+    scroll-snap-align: start;
 }
 
 .logo{
