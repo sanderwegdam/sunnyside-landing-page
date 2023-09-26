@@ -41,13 +41,13 @@ body {
     justify-content: center;
     align-items: center;
     font-size: 18px;
-    font-family: 'Barlow', sans-serif;    
+    font-family: 'Barlow', sans-serif;
 }
 
 .main-wrapper{
     display: flex;
     justify-content: center;
-    align-items: center;  
+    align-items: center;
 }
 
 #services, #about, #projects, #contact{
@@ -151,7 +151,7 @@ hr {
 .image-graphic-design h1, .image-photography h1 {
     font-family: 'Fraunces', serif;
     display: flex;
-    justify-content: center; 
+    justify-content: center;
 }
 
 .image-graphic-design p, .image-photography p {
@@ -238,29 +238,29 @@ path:hover {
 
 /* ----------------  MOBILE  ----------------*/
 @media only screen and (max-width: 964px) {
-    
+
     body {
         height: auto;
         width: 100%;
     }
-    
+
     .main-wrapper {
         flex-direction: column;
         width: 375px;
     }
-    
+
     .header-container {
         display: flex;
         position: relative;
-        flex-direction: column;     
+        flex-direction: column;
         width: 375px;
         background-image: url("images/mobile/image-header.jpg");
         height: 538px;
-        background-size: 375px 538px;   
-        align-items: center;   
-    }  
+        background-size: 375px 538px;
+        align-items: center;
+    }
 
-    .logo{   
+    .logo{
         align-self: flex-start;
     }
 
@@ -269,16 +269,16 @@ path:hover {
         margin-right: 25px;
         width: 24px;
         height: 18px;
-        align-self: flex-end;   
+        align-self: flex-end;
     }
-    
+
     .menu {
         display:none;
     }
 
     .menu-open {
-        display: flex; 
-        position: absolute;  
+        display: flex;
+        position: absolute;
         flex-direction: column;
         width: 320px;
         height: 320px;
@@ -287,23 +287,23 @@ path:hover {
         color: var(--Very-dark-grayish-blue);
         background-color: white;
         justify-content: center;
-        align-items: center; 
+        align-items: center;
         clip-path: polygon(91% 9%, 100% 0%, 100% 100%, 75% 100%, 0 100%, 0 9%);
     }
 
-    .menu-item:first-child{  
-        margin-top: 25px; 
+    .menu-item:first-child{
+        margin-top: 25px;
     }
 
-    .menu-item:first-child:hover{  
-        padding-inline: 35px; 
+    .menu-item:first-child:hover{
+        padding-inline: 35px;
     }
 
     .menu-item:last-child:hover{
-        padding-inline: 30px; 
+        padding-inline: 30px;
     }
 
-    .menu-item {    
+    .menu-item {
         padding: 18px 25px;
     }
 
@@ -316,7 +316,7 @@ path:hover {
         font-family: 'Fraunces', sans-serif;
     }
 
-    .menu+h1 {      
+    .menu+h1 {
         margin-top: 35px;
         padding: 45px;
         font-size: 40px;
@@ -333,7 +333,7 @@ path:hover {
         flex-direction: column;
         width: 375px;
         background-color: white;
-    }  
+    }
 
     .wrapper-1, .wrapper-2, .wrapper-3 {
         display: flex;
@@ -364,7 +364,7 @@ path:hover {
 
     .transform a:hover~hr, .stand-out a:hover~hr {
         margin-inline: auto;
-    }   
+    }
 
     .image-transform-mobile, .image-stand-out-mobile{
         width: 375px;
@@ -387,10 +387,10 @@ path:hover {
     .image-graphic-design h1, .image-photography h1 {
         margin-top: 360px;
         font-size: 30px;
-        padding: 30px 0;   
+        padding: 30px 0;
     }
 
-    .image-graphic-design p, .image-photography p {   
+    .image-graphic-design p, .image-photography p {
         padding: 0 20px;
         font-size: 16px;
     }
@@ -427,7 +427,7 @@ path:hover {
 
     .pictures > * {
         width: 50%;
-        height: 187px;   
+        height: 187px;
      }
 
     footer  {
@@ -464,7 +464,7 @@ path:hover {
         background-position: center;
     }
 
-    .logo{   
+    .logo{
         align-self: flex-start;
     }
 
@@ -488,13 +488,13 @@ path:hover {
 
     .menu-item {
         padding-top: 15px;
-        padding-inline: 20px; 
+        padding-inline: 20px;
         padding-bottom: 35px;
     }
-    
+
      .menu-item:hover, .menu-item:focus {
         border-radius: 30px;
-        background-color: rgba(255, 255, 255, 30%);                  
+        background-color: rgba(255, 255, 255, 30%);
         font-family: 'Fraunces', serif;
         text-transform: uppercase;
         font-size: 16px;
@@ -533,31 +533,31 @@ path:hover {
         flex-direction: row;
     }
 
-    .wrapper-1 .item-2, .wrapper-2 .item-2{        
+    .wrapper-1 .item-2, .wrapper-2 .item-2{
         padding: 60px;
         display: flex;
         justify-content: center;
-        align-items: center;        
+        align-items: center;
     }
 
     .item-1, .item-2 {
         width: 50%;
         margin-bottom: -4px;
     }
-       
+
     .wrapper-1 .item-1 {
         order: 1;
     }
-    
+
     .wrapper-1 h1, .wrapper-2 h1 {
-        font-size: 34px;   
+        font-size: 34px;
     }
-    
+
     .wrapper-1 p, .wrapper-2 p {
         font-size: 14px;
         padding-block: 20px;
-    } 
-      
+    }
+
     .image-transform-mobile, .image-stand-out-mobile{
         width: 475px;
     }
@@ -578,8 +578,8 @@ path:hover {
 
     .image-graphic-design h1, .image-photography h1 {
         margin-top: 230px;
-        font-size: 22px;  
-        padding: 20px 0;  
+        font-size: 22px;
+        padding: 20px 0;
     }
 
     .image-graphic-design p, .image-photography p {
@@ -611,20 +611,20 @@ path:hover {
     .testimonial-1 p  {
         padding: 40px 25px;
         text-align: center;
-        font-size: 13px;   
+        font-size: 13px;
     }
 
     .testimonial-2 p{
         padding: 40px 55px;
         text-align: center;
-        font-size: 13px;      
+        font-size: 13px;
     }
 
      .testimonial-3 p {
         padding: 40px 10px;
         text-align: center;
-        font-size: 13px;   
-    }    
+        font-size: 13px;
+    }
 
     .testimonial-1 h4, .testimonial-2 h4, .testimonial-3 h4 {
         padding-bottom: 60px;
@@ -640,7 +640,7 @@ path:hover {
 
     .pictures > * {
         width: 25%;
-        height: 294px;    
+        height: 294px;
     }
 
     footer {
@@ -663,9 +663,9 @@ path:hover {
         height: 800px;
         background-size: 1440px 800px;
         background-position: center;
-    }   
+    }
 
-    .main-container { 
+    .main-container {
         width: 1440px;
     }
 
@@ -677,27 +677,27 @@ path:hover {
         order: 1;
     }
 
-    .wrapper-1 .item-2, .wrapper-2 .item-2{        
+    .wrapper-1 .item-2, .wrapper-2 .item-2{
         padding: 160px;
         display: flex;
         justify-content: center;
-        align-items: center;        
+        align-items: center;
     }
 
     .wrapper-1 h1, .wrapper-2 h1 {
-        font-size: 38px; 
+        font-size: 38px;
         padding-inline: 0px;
-    }  
+    }
 
     .wrapper-1 p, .wrapper-2 p {
         font-size: 16px;
         padding-block: 20px;
-    } 
+    }
 
     .image-transform-mobile, .image-stand-out-mobile{
         width: 720px;
-    } 
-    
+    }
+
     .image-graphic-design {
         background-image: url('images/desktop/image-graphic-design.jpg');
         width: 720px;
@@ -714,8 +714,8 @@ path:hover {
 
     .image-graphic-design h1, .image-photography h1 {
         margin-top: 400px;
-        font-size: 22px;  
-        padding: 20px 0;  
+        font-size: 22px;
+        padding: 20px 0;
     }
 
     .image-graphic-design p, .image-photography p {
@@ -726,20 +726,20 @@ path:hover {
     .testimonial-1 p  {
         padding: 40px 25px;
         text-align: center;
-        font-size: 22px;   
+        font-size: 22px;
     }
 
     .testimonial-2 p{
         padding: 40px 55px;
         text-align: center;
-        font-size: 22px;      
+        font-size: 22px;
     }
 
      .testimonial-3 p {
         padding: 40px 0px;
         text-align: center;
-        font-size: 22px;   
-    } 
+        font-size: 22px;
+    }
 
     .pictures {
         display: flex;
@@ -748,9 +748,9 @@ path:hover {
         flex-wrap: wrap;
     }
 
-    .pictures > * {        
+    .pictures > * {
         width: 25%;
-        height: 447px;    
+        height: 447px;
     }
 
     footer {
