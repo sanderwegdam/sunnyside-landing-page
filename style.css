@@ -232,8 +232,8 @@ footer {
     color: var(--White);
 }
 
-path:hover {
-    fill: white;
+.icon:hover {
+    filter: brightness(0) invert(1);
 }
 
 /* ----------------  MOBILE  ----------------*/
@@ -509,10 +509,6 @@ path:hover {
         margin-top:130px;
         padding-bottom:110px;
     }
-
-    /* .menu+h1 {
-        padding: 70px;
-    } */
 
     .icon-arrow-down {
         width: 40px;
