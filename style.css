@@ -120,7 +120,7 @@ hr {
     display: none;
 }
 
-.transform a:hover~hr {
+.transform a + hr {
     display: block;
     background-color: var(--Soft-yellow);
     height: 7px;
@@ -130,11 +130,11 @@ hr {
     border-radius: 5px;
 }
 
-.transform a:active~hr {
+.transform a:hover~hr {
     background-color: var(--Yellow);
 }
 
-.stand-out a:hover~hr {
+.stand-out a + hr {
     display: block;
     background-color: var(--Soft-red);
     height: 7px;
@@ -144,7 +144,7 @@ hr {
     border-radius: 5px;
 }
 
-.stand-out a:active~hr {
+.stand-out a:hover~hr {
     background-color: var(--Red);
 }
 
@@ -362,7 +362,7 @@ footer {
         display: none;
     }
 
-    .transform a:hover~hr, .stand-out a:hover~hr {
+    .transform a + hr, .stand-out a + hr {
         margin-inline: auto;
     }
 
