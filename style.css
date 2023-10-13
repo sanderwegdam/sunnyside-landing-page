@@ -124,7 +124,7 @@ hr {
     display: block;
     background-color: var(--Soft-yellow);
     height: 7px;
-    width: 100px;
+    width: 110px;
     border: none;
     margin-top: -7px;
     border-radius: 5px;
@@ -138,7 +138,7 @@ hr {
     display: block;
     background-color: var(--Soft-red);
     height: 7px;
-    width: 100px;
+    width: 110px;
     border: none;
     margin-top: -7px;
     border-radius: 5px;
@@ -536,6 +536,10 @@ footer {
         align-items: center;
     }
 
+    .learn-more{
+        margin-left: 4px;
+    }
+
     .item-1, .item-2 {
         width: 50%;
         margin-bottom: -4px;
@@ -678,6 +682,10 @@ footer {
         display: flex;
         justify-content: center;
         align-items: center;
+    }
+
+    .learn-more{
+        margin-left: 4px;
     }
 
     .wrapper-1 h1, .wrapper-2 h1 {
